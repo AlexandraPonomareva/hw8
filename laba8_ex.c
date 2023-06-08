@@ -45,31 +45,4 @@ long double DependencyCount(){
     }
     
     fclose(home_work8);
-    
-    FILE *home_work8_1;
-    home_work8_1 = fopen("home_work8_1.txt", "wt");
-
-    //We implement the algorithm for counting two dependencies
-
-    for(int i = 0; i < Colomns; i++){
-        for(int j = 0; j < Rows; j++){
-            if(matrix[i][j] || matrix[i][j]){
-                
-                matrix1[i][j] = 1;
-            
-            }
-            else{
-                
-                matrix1[i][j]= 0;
-            
-            }
-            
-            printf("%d\n", matrix1[i][j]);
-            fprintf(home_work8_1, "%d %d\n", matrix1[i][0], matrix1[i][1]);}
-            printf("\n");
-            
-            }
-        
-        fclose(home_work8_1);
-        
     }
