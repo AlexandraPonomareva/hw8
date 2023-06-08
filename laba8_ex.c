@@ -41,8 +41,9 @@ long double DependencyCount(){
         matrix[Colomns][0] = Va;
         double Vw = (We * Ra * cos(i));
         matrix[Colomns][1] = Vw;
-        fprintf(home_work8, "%.12lf %.12lf %d\n", Va, Vw, Ra);
-    
+        if(matrix[Colomns][0] == matrix[Colomns][1]){
+            break;}
+            fprintf(home_work8, "%.12lf %.12lf %d\n", Va, Vw, Ra);
     }
     
     fclose(home_work8);
